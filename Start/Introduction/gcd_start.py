@@ -4,8 +4,11 @@
 
 
 def gcd(a, b):
-    pass
-
+    while (b != 0):
+        x = a % b
+        a = b
+        b = x
+    return a
 
 # try out the function with a few examples
 print(gcd(60, 96))  # should be 12
